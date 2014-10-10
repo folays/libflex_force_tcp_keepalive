@@ -1,0 +1,9 @@
+=== install
+# make install
+
+=== HOWTO check it is working
+
+# ss -4 -t -n -e -p state established dst '*:514' | cat
+Recv-Q Send-Q             Local Address:Port               Peer Address:Port 
+0      0                     10.42.2.28:49967                10.42.2.10:514    timer:(keepalive,103min,0) users:(("rsyslogd",15171,1)) uid:101 ino:302301128 sk:ffff880014520e00 <->
+       			     				     		              ^^^^^^^^^
