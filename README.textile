@@ -1,10 +1,10 @@
-.h1 install
+h3. install
 
 <pre>
 # make install
 </pre>
 
-h1. check functionnality
+h3. check functionnality
 
 <pre>
 # ss -4 -t -n -e -p state established dst '*:514' | cat
