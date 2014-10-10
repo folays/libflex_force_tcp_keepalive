@@ -18,7 +18,7 @@ $(PRELOAD) : $(OBJ)
 	$(CC) -o $(PRELOAD) -shared $(OBJ)
 
 install	:
-	echo "LD_PRELOAD=$(PWD)/$(PRELOAD)" >> /etc/default/rsyslog
+	echo "export LD_PRELOAD=$(PWD)/$(PRELOAD)" >> /etc/default/rsyslog
 
 clean	:
 	-$(RM) $(OBJ) *~
